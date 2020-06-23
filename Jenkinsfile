@@ -18,6 +18,7 @@ pipeline {
     stage('Validate') {
       steps {
         echo 'Estoy en Validate'
+        sh 'ls src'
       }
     }
 
