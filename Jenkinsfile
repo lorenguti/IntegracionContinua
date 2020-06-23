@@ -11,6 +11,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Estoy en Test'
+        sh 'sh ls'
       }
     }
 
