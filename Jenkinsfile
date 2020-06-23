@@ -4,8 +4,10 @@ pipeline {
     stage('Build') {
       steps {
         git(url: 'https://github.com/lorenguti/IntegracionContinua.git', branch: 'master')
-        sh './ gradlew build'
-        sh './ gradle init'
+        withGradle() {
+          withGradle()
+        }
+
       }
     }
 
