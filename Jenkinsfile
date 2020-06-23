@@ -26,7 +26,7 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'Estoy en Deploy'
-        sh 'chmod +x gradlew'
+        sh 'chmod +x gradle'
         sh './gradle/wrapper/gradle-wrapper.jar'
       }
     }
