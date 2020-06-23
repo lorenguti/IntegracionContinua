@@ -12,14 +12,14 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Estoy en Test'
-        sh 'ls'
+        sh 'ls gradle'
       }
     }
 
     stage('Validate') {
       steps {
         echo 'Estoy en Validate'
-        sh 'ls src'
+        sh 'ls gradlew'
       }
     }
 
